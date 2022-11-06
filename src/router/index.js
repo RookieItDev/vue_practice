@@ -10,6 +10,7 @@ import BackendLayout from '@/layouts/Backend.vue'
 import Home from '@/views/frontend/Home.vue'
 import Login from '@/views/frontend/Login.vue'
 import NotFound404 from '@/views/frontend/NotFound404.vue'
+import Lab1 from '@/views/frontend/Lab1.vue'
 
 // Backend
 import HomeBackend from '@/views/backend/Home.vue'
@@ -40,6 +41,21 @@ const routes = [
       {
         path: '',
         component: Login
+      }
+    ],
+    meta: {
+      title: 'เข้าสู่ระบบ',
+      description: 'รายละเอียดหน้าเข้าสู่ระบบ'
+    }
+  },
+  {
+    path: '/lab1',
+    name: 'lab1',
+    component: FrontendLayout,
+    children: [
+      {
+        path: '',
+        component: Lab1
       }
     ],
     meta: {
